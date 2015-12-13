@@ -8,6 +8,9 @@ We need to find or write a light sensor plugin
 
 *[Processing Javascript Tutorial](http://processingjs.org/articles/p5QuickStart.html)
 
+
+processing code is now in www/js/src/bake.js and the cordova js connection is in www/js/index.js
+
 ## To Install
 
 You need node, cordova, bower(optional)
