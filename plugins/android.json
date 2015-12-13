@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.bakeoff"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "com.bakeoff"
+        },
+        "cordova-plugin-lightSensor": {
+            "PACKAGE_NAME": "com.bakeoff"
+        }
+    },
+    "dependent_plugins": {}
+}

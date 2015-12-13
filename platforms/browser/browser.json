@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-lightSensor": {
+            "PACKAGE_NAME": "com.bakeoff"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.bakeoff"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "com.bakeoff"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-lightSensor/www/light.js",
+            "id": "cordova-plugin-lightSensor.light",
+            "pluginId": "cordova-plugin-lightSensor",
+            "clobbers": [
+                "cordova-plugin-lightSensor"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-lightSensor": "0.2.1",
+        "cordova-plugin-whitelist": "1.2.0",
+        "phonegap-nfc": "0.6.6"
+    }
+}

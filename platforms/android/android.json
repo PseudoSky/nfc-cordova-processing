@@ -1,0 +1,82 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NfcPlugin\"><param name=\"android-package\" value=\"com.chariotsolutions.nfc.plugin.NfcPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Light\"><param name=\"android-package\" value=\"tools.mango.cordova.plugin.android.LightSensorListener\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.NFC\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.nfc\" android:required=\"false\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*/application/activity": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.bakeoff"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "com.bakeoff"
+        },
+        "cordova-plugin-lightSensor": {
+            "PACKAGE_NAME": "com.bakeoff"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/phonegap-nfc/www/phonegap-nfc.js",
+            "id": "phonegap-nfc.NFC",
+            "pluginId": "phonegap-nfc",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-lightSensor/www/light.js",
+            "id": "cordova-plugin-lightSensor.light",
+            "pluginId": "cordova-plugin-lightSensor",
+            "clobbers": [
+                "cordova-plugin-lightSensor"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.0",
+        "phonegap-nfc": "0.6.6",
+        "cordova-plugin-lightSensor": "0.2.1"
+    }
+}

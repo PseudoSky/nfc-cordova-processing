@@ -1,0 +1,19 @@
+{
+  "name": "bakeoff",
+  "version": "0.0.0",
+  "authors": [
+    "snow <kkrautha@andrew.cmu.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "processing": "~1.4.16",
+    "lodash": "~3.10.1"
+  }
+}
